@@ -22,7 +22,7 @@ export class Dollar {
     this.amount = amount;
   }
 
-  times(multiplier) {
+  times(multiplier: number): void {
     // 1. 우선적으로는 스텁 구현(컴파일을 위해 껍데기만 만들어두는 것)
     // 3. 2에서 할당한 정적값을 동적으로 바꾸기 위해 메서드를 변경한다.
     // ** 작은 단계를 밟아가는게 문제의 크기를 조절할 수 있는 능력을 길러준다.
@@ -40,5 +40,3 @@ export class Dollar {
 // 5. 중복을 제거하기 위해 리팩토링을 한다.
 
 // 의존성과 중복 (의존성은 문제, 중복은 문제의 징후)
-
-//
