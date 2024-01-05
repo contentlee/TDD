@@ -1,6 +1,6 @@
-// Chapter 7 사과와 오렌지
+// Chapter 8 객체 만들기
 
-class Money {
+export class Money {
   amount: number;
 
   equals(obj: Money): boolean {
@@ -8,6 +8,18 @@ class Money {
     console.log(this.constructor.name, money.constructor.name);
     return this.constructor.name === money.constructor.name && this.amount === money.amount;
   }
+
+  // 추상화를 진행하며 dollar 메서드를 추가한다.
+  static dollar(amt: number): Dollar {
+    return new Dollar(amt);
+  }
+
+  // 추상화를 진행하며 franc 메서드를 추가한다.
+  static franc(amt: number): Franc {
+    return new Franc(amt);
+  }
+
+  times(multiplier: number) {}
 }
 
 export class Dollar extends Money {
@@ -15,7 +27,7 @@ export class Dollar extends Money {
     super();
     this.amount = amount;
   }
-
+  // 1. Dollar와 Franc 각각에 정의된 메서드 times의 형태가 거의 비슷하다.
   times(multiplier: number): Money {
     return new Dollar(this.amount * multiplier);
   }
@@ -27,16 +39,7 @@ export class Franc extends Money {
     this.amount = amount;
   }
 
-  times(multiplier: number): Franc {
+  times(multiplier: number): Money {
     return new Franc(this.amount * multiplier);
   }
 }
-
-// test code 작성 중 만난 문제 1
-// 자바에서는 getClass를 통해 각 Class가 구분이 되는 것 같지만
-// 자바스크립트에서는 불가능
-// 어떻게 해결할 수 있을까?
-
-// stackoverflow에 친절한 답변들이 많았고,
-// constructor의 name을 참조하여 비교하는 것으로 해결하였다.
-// https://stackoverflow.com/questions/1249531/how-to-get-a-javascript-objects-class
