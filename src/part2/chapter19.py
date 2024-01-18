@@ -41,6 +41,7 @@ class TestCaseTest (TestCase) :
     self.test.run()
     assert(self.test.wasSetUp)
 
+TestCaseTest("testSetUp").run()
 TestCaseTest("testRunning").run()
 
 # 테스트의 실행을 확인 한 후, 한 번에 하나의 메서드만 수정해서 테스트가 통과되도록 노력
