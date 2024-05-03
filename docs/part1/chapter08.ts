@@ -1,7 +1,7 @@
 // Chapter 8 객체 만들기
 
 export class Money {
-  amount: number;
+  amount: number = 0;
 
   equals(obj: Money): boolean {
     const money: Money = obj;

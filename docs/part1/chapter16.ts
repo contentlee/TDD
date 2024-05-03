@@ -98,7 +98,7 @@ export class Pair {
     this.to = to;
   }
 
-  equals(obj): boolean {
+  equals(obj: Pair): boolean {
     const pair = obj;
     return this.from === pair.from && this.to === pair.to;
   }

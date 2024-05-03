@@ -1,5 +1,5 @@
 import { describe, it, expect } from "@jest/globals";
-import { Dollar, Franc } from "./chapter6";
+import { Dollar, Franc } from "./chapter06";
 
 describe("test", () => {
   it("test multiplication", () => {

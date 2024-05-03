@@ -1,7 +1,7 @@
 // Chapter 7 사과와 오렌지
 
 class Money {
-  amount: number;
+  amount: number = 0;
 
   equals(obj: Money): boolean {
     const money: Money = obj;

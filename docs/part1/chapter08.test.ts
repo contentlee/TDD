@@ -1,13 +1,13 @@
 import { describe, it, expect } from "@jest/globals";
-import { Dollar, Franc, Money } from "./chapter8";
+import { Dollar, Franc, Money } from "./chapter08";
 
 describe("test", () => {
   it("test multiplication", () => {
     // times의 중복을 없애기 위해 five를 Money로 변경
     const five: Money = Money.dollar(5);
     // 현재 times는 abstract한 상태이기 때문에 테스트는 실패한다.
-    expect(new Dollar(10)).toBe(five.times(2));
-    expect(new Dollar(15)).toBe(five.times(3));
+    expect(new Dollar(10).amount).toBe(five.times(2));
+    expect(new Dollar(15).amount).toBe(five.times(3));
   });
 
   it("test equality", () => {

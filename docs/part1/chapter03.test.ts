@@ -1,11 +1,11 @@
 import { test, expect, describe } from "@jest/globals";
-import { Dollar } from "./chapter3";
+import { Dollar } from "./chapter03";
 
 describe("test", () => {
   test("testMultiplication", () => {
     const five = new Dollar(5);
-    five.times(2);
-    expect(five.amount).toBe(10);
+
+    expect(five.times(2).amount).toBe(10);
   });
 
   test("testEquality", () => {

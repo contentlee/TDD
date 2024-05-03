@@ -81,7 +81,7 @@ class TestCaseTest (TestCase) :
 suite = TestSuite()
 suite.add(TestCaseTest("testTemplateMethod"))
 suite.add(TestCaseTest("testResult"))
-suite.add(TestCaseTest("testFailtedResult"))
+suite.add(TestCaseTest("testFailedResult"))
 suite.add(TestCaseTest("testSuite"))
 
 result = TestResult()

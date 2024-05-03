@@ -39,7 +39,7 @@ describe("test", () => {
     const bank = new Bank();
     const reduced = bank.reduce(sum, "USD");
     // 1. reduced는 Expression에 환율을 적용함으로써 얻어짐.
-    expect(Money.dollar(10)).toBe(reduced);
+    expect(Money.dollar(10).amount).toBe(reduced.amount);
   });
 });
 

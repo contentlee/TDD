@@ -3,7 +3,7 @@
 // 상속의 방법으로 중복 해결하기
 class Money {
   // 책의 예제에서는 protected로 상속된 영역까지 사용할 수 있도록 했지만, 타입스크립트에서는 하단의 amount 참조에서 에러가 나므로 public으로 변경.
-  amount: number;
+  amount: number = 0;
 
   // 중복 제거를 위해 eqauls을 Money 객체 안으로 옮김.
   equals(obj: Money): boolean {
