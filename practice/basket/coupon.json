@@ -1,0 +1,26 @@
+[
+  {
+    "name": "special",
+    "code_number": "0001",
+    "percent": 10,
+    "start_date": "2024-05-03T09:34:54.497Z",
+    "end_date": "2024-05-07T09:34:54.497Z",
+    "is_enabled_stacking": true
+  },
+  {
+    "name": "special",
+    "code_number": "0001",
+    "percent": 10,
+    "start_date": "2024-05-01T09:34:54.497Z",
+    "end_date": "2024-05-02T09:34:54.497Z",
+    "is_enabled_stacking": true
+  },
+  {
+    "name": "special",
+    "code_number": "0001",
+    "percent": 10,
+    "start_date": "2024-05-03T09:34:54.497Z",
+    "end_date": "2024-05-07T09:34:54.497Z",
+    "is_enabled_stacking": false
+  }
+]

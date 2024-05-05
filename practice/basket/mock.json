@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "product_number": "0001",
+    "name": "banana",
+    "category": "food",
+    "discount": {
+      "is_discounted": true,
+      "percent": 40,
+      "event": null
+    },
+    "price": 2940,
+    "detail": "chikita banana from Ecuador, 1.2kg",
+    "img": "",
+    "add_date": "2024-05-05T14:34:54.497Z"
+  },
+  {
+    "id": 2,
+    "product_number": "0010",
+    "name": "potato",
+    "category": "food",
+    "discount": {
+      "is_discounted": true,
+      "percent": 0,
+      "event": {
+        "name": "this week veg event",
+        "start_date": "2024-05-03T09:34:54.497Z",
+        "end_date": "2024-05-07T09:34:54.497Z",
+        "percent": 30
+      }
+    },
+    "price": 12900,
+    "detail": "best potato, 2kg",
+    "img": "",
+    "add_date": "2024-05-05T09:34:54.497Z"
+  },
+  {
+    "id": 5,
+    "product_number": "0011",
+    "name": "water parsely",
+    "category": "food",
+    "discount": {
+      "is_discounted": true,
+      "percent": 0,
+      "event": {
+        "name": "this week veg event",
+        "start_date": "2024-05-03T09:34:54.497Z",
+        "end_date": "2024-05-07T09:34:54.497Z",
+        "percent": 30
+      }
+    },
+    "price": 2990,
+    "detail": "fresh & fragrant, 200g",
+    "img": "",
+    "add_date": "2024-05-05T11:34:54.497Z"
+  },
+  {
+    "id": 4,
+    "product_number": "1001",
+    "name": "backpack",
+    "category": "fashion",
+    "discount": {
+      "is_discounted": false,
+      "percent": 0,
+      "event": null
+    },
+    "price": 159000,
+    "detail": "Kodak new foundy backpack",
+    "img": "",
+    "add_date": "2024-05-05T14:29:54.497Z"
+  },
+  {
+    "id": 8,
+    "product_number": "1011",
+    "name": "key ring",
+    "category": "food",
+    "discount": {
+      "is_discounted": true,
+      "percent": 40,
+      "event": null
+    },
+    "price": 15000,
+    "detail": "rabbit & clover",
+    "img": "",
+    "add_date": "2024-05-02T15:00:00.000Z"
+  }
+]
